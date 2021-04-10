@@ -51,11 +51,17 @@
 
         <legend class="page-form__set-title">Тип</legend>
 
-        <input class="page-form__set-radio" type="radio" name="categories" id="radio-accessory" checked>
-        <label class="page-form__set-label" for="radio-accessory">Аксуссуары для интерьера</label>
+        <ul class="page-form__list">
+          <li>
+            <input class="page-form__set-radio" type="radio" name="categories" id="radio-accessory" checked>
+            <label class="page-form__set-label" for="radio-accessory">Аксуссуары для интерьера</label>
+          </li>
+          <li>
+            <input class="page-form__set-radio" type="radio" name="categories" id="radio-toys">
+            <label class="page-form__set-label" for="radio-toys">Детская игрушка</label>
+          </li>
 
-        <input class="page-form__set-radio" type="radio" name="categories" id="radio-toys">
-        <label class="page-form__set-label" for="radio-toys">Детская игрушка</label>
+      </ul>
 
       </fieldset>
 
@@ -63,23 +69,39 @@
 
         <legend class="page-form__set-title">Цвет</legend>
 
-        <input class="page-form__set-check" type="checkbox" name="white" id="check-white" checked>
-        <label class="page-form__set-label" for="check-white">Белый</label>
+        <ul class="page-form__list">
 
-        <input class="page-form__set-check" type="checkbox" name="grey" id="check-grey" checked>
-        <label class="page-form__set-label" for="check-grey">Серый</label>
+          <li>
+            <input class="page-form__set-check" type="checkbox" name="white" id="check-white" checked>
+            <label class="page-form__set-label" for="check-white">Белый</label>
+          </li>
 
-        <input class="page-form__set-check" type="checkbox" name="tiffany" id="check-tiffany">
-        <label class="page-form__set-label" for="check-tiffany">"Тиффани"</label>
+          <li>
+            <input class="page-form__set-check" type="checkbox" name="grey" id="check-grey" checked>
+            <label class="page-form__set-label" for="check-grey">Серый</label>
+          </li>
 
-        <input class="page-form__set-check" type="checkbox" name="black" id="check-black">
-        <label class="page-form__set-label" for="check-black">Черный</label>
+          <li>
+            <input class="page-form__set-check" type="checkbox" name="tiffany" id="check-tiffany">
+            <label class="page-form__set-label" for="check-tiffany">"Тиффани"</label>
+          </li>
 
-        <input class="page-form__set-check" type="checkbox" name="pink" id="check-pink">
-        <label class="page-form__set-label" for="check-pink">Розовый</label>
+          <li>
+            <input class="page-form__set-check" type="checkbox" name="black" id="check-black">
+            <label class="page-form__set-label" for="check-black">Черный</label>
+          </li>
 
-        <input class="page-form__set-check" type="checkbox" name="orange" id="check-orange">
-        <label class="page-form__set-label" for="check-orange">Оранжевый</label>
+          <li>
+            <input class="page-form__set-check" type="checkbox" name="pink" id="check-pink">
+            <label class="page-form__set-label" for="check-pink">Розовый</label>
+          </li>
+
+          <li>
+            <input class="page-form__set-check" type="checkbox" name="orange" id="check-orange">
+            <label class="page-form__set-label" for="check-orange">Оранжевый</label>
+          </li>
+
+        </ul>
 
       </fieldset>
 
@@ -87,31 +109,53 @@
 
         <legend class="page-form__set-title">ФИО</legend>
 
-        <label class="page-form__set-label" for="name"></label>
-        <input class="page-form__set-text" type="text" id="name" placeholder="Введите ваше имя*" required>
+        <ul class="page-form__list">
 
-        <label class="page-form__set-label" for="surname"></label>
-        <input class="page-form__set-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
+          <li>
+            <label class="page-form__set-label" for="name">Имя:</label>
+            <input class="page-form__set-text" type="text" id="name" placeholder="Введите ваше имя*" required>
+          </li>
 
-        <label class="page-form__set-label" for="middle_name"></label>
-        <input class="page-form__set-text" type="text" id="middle_name" placeholder="Отчество, если желаете">
+          <li>
+            <label class="page-form__set-label" for="surname">Фамилия:</label>
+            <input class="page-form__set-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
+          </li>
+
+          <li>
+            <label class="page-form__set-label" for="middle_name">Отчество:</label>
+            <input class="page-form__set-text" type="text" id="middle_name" placeholder="Отчество, если желаете">
+          </li>
+
+        </ul>
 
       </fieldset>
 
-      <fieldset class="page-form__set">
+      <fieldset class="page-form__set-contact">
 
         <legend class="visually-hidden">Контактная информация</legend>
 
-        <label class="page-form__set-title" for="phone">Тел</label>
-        <input class="page-form__set-number" type="tel" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+        <ul class="page-form__list">
 
-        <label class="page-form__set-title" for="mail">E-mail</label>
-        <input class="page-form__set-number" type="email"  id="mail" placeholder="Ваш Email*" required>
+          <li class="page-form__item-contact">
+            <label class="page-form__contact-title" for="phone">Тел</label>
+            <input class="page-form__set-number" type="tel" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+          </li>
+
+          <li class="page-form__item-contact">
+            <label class="page-form__contact-title" for="mail">E-mail</label>
+            <input class="page-form__set-number" type="email"  id="mail" placeholder="Ваш Email*" required>
+          </li>
+
+        </ul>
 
       </fieldset>
 
-        <label class="page-form__set-title" for="message">Доп</label>
-        <textarea class="page-form__set-message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <div class="page-form__set-message">
+
+        <label class="page-form__message-title" for="message">Доп</label>
+        <textarea class="page-form__message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+      </div>
 
       <span class="page-form__note">*Поля обязательны для заполнения</span>
 
