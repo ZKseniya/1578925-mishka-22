@@ -1,20 +1,19 @@
-.social-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid @color-border;
+.logo {
+  display: block;
+  margin: 22px auto;
 }
 
-
 @media (min-width: @tablet-width) {
-  .social-list {
+  .logo {
+    margin: 0 0 0 50px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .social-list {
+  .logo {
     order: 2;
   }
 }

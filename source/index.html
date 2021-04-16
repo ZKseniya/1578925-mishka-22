@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -11,8 +12,11 @@
 <body class="page-body">
   <header class="page-header">
     <a class="logo">
-      <img src="img/mishka-logo-mobile.svg" width="116" height="22" alt="Логотип интернет-магазина Мишка">
+      <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
     </a>
+
+    <button class="nav" type="button"></button>
+
     <ul class="main-nav-list">
       <li class="main-nav-list__item">
         <a class="main-nav-list__link" href="">Каталог товаров</a>
@@ -43,14 +47,16 @@
   </header>
   <main class="page-main">
     <section class="promo">
-      <h1 class="title promo__title">Милые штучки ручной работы</h1>
+      <h1 class="promo__title">Милые штуки ручной <br> работы для дома</h1>
 
-      <a class="promo__link" href="">Предметы интерьера</a>
-      <a class="promo__link" href="">Детские игрушки</a>
+      <div class="promo__links">
+        <a class="promo__link" href="">Предметы интерьера</a>
+        <a class="promo__link" href="">Детские игрушки</a>
+      </div>
 
     </section>
     <section class="product-week">
-      <h2 class="title">Вязаные корзинки</h2>
+      <h2 class="title product-week__title">Вязаные корзинки</h2>
       <p class="product-week__label">Товар недели</p>
 
       <p class="product-week__desc">
@@ -87,8 +93,8 @@
 
       <img class="product-week__img">
 
-      <p class="product-week__price"></p>
-      <a class="button" href="form.html">Заказать</a>
+      <p class="product-week__price">990 руб</p>
+      <a class="button product-week__button" href="form.html">Заказать</a>
 
     </section>
     <section class="about-us">
@@ -128,10 +134,12 @@
 
       <p class="reviews__autor">Анастасия Красильникова <span class="reviews__telegram">@misssssiskras</span></p>
 
-      <button class="reviews__button reviews__button--left">Влево</button>
-      <button class="reviews__button reviews__button--right">Вправо</button>
+      <div class="reviews__buttons">
+        <button class="reviews__button reviews__button--left">Влево</button>
+        <button class="reviews__button reviews__button--right">Вправо</button>
+      </div>
 
-      <a class="button" href="">Написать</a>
+      <a class="button reviews__write" href="">Написать</a>
 
     </section>
     <section class="contacts">
@@ -147,10 +155,13 @@
         <img src="" width="320" height="455" alt=" г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       </div>
 
-      <a class="button" href="">Напишите нам</a>
+      <a class="button contacts__button" href="">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
+    <a class="logo page-footer__logo">
+      <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+    </a>
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="">Инстаграмм</a>

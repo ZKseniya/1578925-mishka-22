@@ -4,3 +4,20 @@
   line-height: 18px;
   color: @font-color-dark;
 }
+
+@media (min-width: @tablet-width) {
+  .developer {
+    display: flex;
+  }
+
+  .developer__text {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .developer {
+    order: 3;
+  }
+}

@@ -5,3 +5,19 @@
 .product-week-feature__sell {
   border-bottom: 1px solid @color-border;
 }
+
+@media (min-width: @tablet-width) {
+  .product-week-feature {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-week-feature {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
