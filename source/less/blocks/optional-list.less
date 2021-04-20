@@ -7,7 +7,30 @@
   padding: 0;
 }
 
+.optional-list__item {
+  text-align: center;
+  padding: 29px 40px 27px;
+  border-bottom: 1px solid @color-border;
+}
+
 .optional-list__link {
   text-decoration: none;
   color: @font-color-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .optional-list {
+    display: flex;
+    order: 1;
+  }
+
+  .optional-list__item {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .optional-list {
+    order: 3;
+  }
 }

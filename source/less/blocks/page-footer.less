@@ -1,3 +1,28 @@
 .page-footer {
   background: @bg-color-footer;
+  grid-row-start: 5;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer .page-center {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo {
+    order: 1;
+  }
 }

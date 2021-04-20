@@ -3,4 +3,14 @@
   font-weight: 400;
   font-style: normal;
   color: @font-color-text;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-body {
+    grid-template-rows: 89px 89px 1fr min-content;
+  }
 }

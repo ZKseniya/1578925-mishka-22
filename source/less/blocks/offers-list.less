@@ -5,9 +5,17 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 .offers-list__link {
   text-decoration: none;
   color: @font-color-dark;
+}
+
+@media (min-width: @desktop-width) {
+  .offers-list {
+    display: flex;
+    order: 4;
+  }
 }

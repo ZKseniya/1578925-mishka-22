@@ -1,10 +1,39 @@
 .contacts-info {
   font-size: 14px;
   line-height: 30px;
+  margin: 10px 30px;
 }
 
 .contacts-info__mail {
   color: @font-color-text;
   text-decoration: none;
   border-bottom: 1px solid @bg-color-light;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-info {
+    margin: 10px 0;
+    display: flex;
+  }
+
+  .contacts-info__title {
+    width: 82px;
+  }
+
+  .contacts-info__desc:nth-last-of-type(1) {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-info {
+    flex-wrap: wrap;
+    width: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .contacts-info__desc {
+    margin-right: 10px;
+  }
 }
