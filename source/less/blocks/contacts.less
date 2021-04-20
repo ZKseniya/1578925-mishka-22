@@ -1,17 +1,14 @@
-.contacts {
-  padding: 0 30px;
-}
-
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
+  margin: 0 30px;
+}
+
+.contacts__button {
+  margin: 10px 30px;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    padding: 0 50px;
-  }
-
   .contacts__button {
     margin: 10px auto;
     width: 230px;
@@ -20,13 +17,14 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    padding: 0 50px 0 150px;
+    padding: 0 50px 0 225px;
     margin-bottom: 105px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .contacts__title {
+    margin: 0;
     grid-column-start: 1;
     grid-column-end: 2;
   }

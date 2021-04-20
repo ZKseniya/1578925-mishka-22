@@ -1,6 +1,6 @@
 .page-footer {
-  padding: 0 30px;
   background: @bg-color-footer;
+  grid-row-start: 5;
 }
 
 .page-footer__logo {
@@ -8,8 +8,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    padding: 50px;
+  .page-footer .page-center {
     display: flex;
     justify-content: space-between;
   }

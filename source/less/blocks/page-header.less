@@ -12,14 +12,18 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 2;
     display: grid;
+    grid-template-rows: 89px auto;
     grid-template-columns: 321px 1fr;
   }
 
   .page-header__delivery {
     display: inline-block;
     order: 3;
-    background: @bg-promo;
     margin: 0;
   }
 }
