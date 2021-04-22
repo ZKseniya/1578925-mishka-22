@@ -10,9 +10,10 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-center">
     <a class="logo">
-      <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+      <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35"
+        alt="Логотип интернет-магазина Мишка">
     </a>
 
     <button class="nav" type="button"></button>
@@ -45,125 +46,134 @@
     <p class="page-header__delivery">Бесплатная доставка по России</p>
 
   </header>
-  <main class="page-main">
-    <h1 class="inner-title">Вязание на заказ</h1>
-    <p class="page-main__text">
-      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+  <main class="page-main form-main">
+    <div class="page-main__wrapper-title">
+      <h1 class="inner-title">Вязание на заказ</h1>
+    </div>
+      <p class="form-main__text">
+    Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+    уточнить детали.
     </p>
     <form class="page-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="page-form__set">
-
-        <legend class="page-form__set-title">Тип</legend>
-
-        <ul class="page-form__list">
-          <li>
-            <input class="page-form__set-radio" type="radio" name="categories" id="radio-accessory" checked>
-            <label class="page-form__set-label" for="radio-accessory">Аксуссуары для интерьера</label>
-          </li>
-          <li>
-            <input class="page-form__set-radio" type="radio" name="categories" id="radio-toys">
-            <label class="page-form__set-label" for="radio-toys">Детская игрушка</label>
-          </li>
-
-      </ul>
-
-      </fieldset>
 
       <fieldset class="page-form__set">
+        <div class="page-form__wrapper page-center">
+          <legend class="page-form__set-title">Тип</legend>
 
-        <legend class="page-form__set-title">Цвет</legend>
+          <ul class="page-form__list">
+            <li class="page-form__item">
+              <input class="page-form__set-radio" type="radio" name="categories" id="radio-accessory" checked>
+              <label class="page-form__set-label" for="radio-accessory">Аксуссуары для интерьера</label>
+            </li>
+            <li class="page-form__item">
+              <input class="page-form__set-radio" type="radio" name="categories" id="radio-toys">
+              <label class="page-form__set-label" for="radio-toys">Детская игрушка</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
 
-        <ul class="page-form__list">
+      <fieldset class="page-form__set page-form__set-color">
+        <div class="page-form__wrapper page-center">
+          <legend class="page-form__set-title">Цвет</legend>
 
-          <li>
-            <input class="page-form__set-check" type="checkbox" name="white" id="check-white" checked>
-            <label class="page-form__set-label" for="check-white">Белый</label>
-          </li>
+          <ul class="page-form__list page-form__list-colors">
 
-          <li>
-            <input class="page-form__set-check" type="checkbox" name="grey" id="check-grey" checked>
-            <label class="page-form__set-label" for="check-grey">Серый</label>
-          </li>
+            <li class="page-form__item">
+              <input class="page-form__set-check" type="checkbox" name="white" id="check-white" checked>
+              <label class="page-form__set-label" for="check-white">Белый</label>
+            </li>
 
-          <li>
-            <input class="page-form__set-check" type="checkbox" name="tiffany" id="check-tiffany">
-            <label class="page-form__set-label" for="check-tiffany">"Тиффани"</label>
-          </li>
+            <li class="page-form__item">
+              <input class="page-form__set-check" type="checkbox" name="grey" id="check-grey" checked>
+              <label class="page-form__set-label" for="check-grey">Серый</label>
+            </li>
 
-          <li>
-            <input class="page-form__set-check" type="checkbox" name="black" id="check-black">
-            <label class="page-form__set-label" for="check-black">Черный</label>
-          </li>
+            <li class="page-form__item">
+              <input class="page-form__set-check" type="checkbox" name="tiffany" id="check-tiffany">
+              <label class="page-form__set-label" for="check-tiffany">"Тиффани"</label>
+            </li>
 
-          <li>
-            <input class="page-form__set-check" type="checkbox" name="pink" id="check-pink">
-            <label class="page-form__set-label" for="check-pink">Розовый</label>
-          </li>
+            <li class="page-form__item">
+              <input class="page-form__set-check" type="checkbox" name="black" id="check-black">
+              <label class="page-form__set-label" for="check-black">Черный</label>
+            </li>
 
-          <li>
-            <input class="page-form__set-check" type="checkbox" name="orange" id="check-orange">
-            <label class="page-form__set-label" for="check-orange">Оранжевый</label>
-          </li>
+            <li class="page-form__item">
+              <input class="page-form__set-check" type="checkbox" name="pink" id="check-pink">
+              <label class="page-form__set-label" for="check-pink">Розовый</label>
+            </li>
 
-        </ul>
+            <li class="page-form__item">
+              <input class="page-form__set-check" type="checkbox" name="orange" id="check-orange">
+              <label class="page-form__set-label" for="check-orange">Оранжевый</label>
+            </li>
 
+          </ul>
+        </div>
       </fieldset>
 
       <fieldset class="page-form__set">
+        <div class="page-form__wrapper page-center">
 
-        <legend class="page-form__set-title">ФИО</legend>
+          <legend class="page-form__set-title">ФИО</legend>
 
-        <ul class="page-form__list">
+          <ul class="page-form__list page-form__list-names">
 
-          <li>
-            <label class="page-form__set-label" for="name">Имя:</label>
-            <input class="page-form__set-text" type="text" id="name" placeholder="Введите ваше имя*" required>
-          </li>
+            <li class="page-form__item page-form__item-names">
+              <label class="page-form__set-label" for="name">Имя:</label>
+              <input class="page-form__set-text" type="text" id="name" placeholder="Введите ваше имя*" required>
+            </li>
 
-          <li>
-            <label class="page-form__set-label" for="surname">Фамилия:</label>
-            <input class="page-form__set-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
-          </li>
+            <li class="page-form__item page-form__item-names">
+              <label class="page-form__set-label" for="surname">Фамилия:</label>
+              <input class="page-form__set-text" type="text" id="surname" placeholder="Укажите фамилию*" required>
+            </li>
 
-          <li>
-            <label class="page-form__set-label" for="middle_name">Отчество:</label>
-            <input class="page-form__set-text" type="text" id="middle_name" placeholder="Отчество, если желаете">
-          </li>
+            <li class="page-form__item page-form__item-names">
+              <label class="page-form__set-label" for="middle_name">Отчество:</label>
+              <input class="page-form__set-text" type="text" id="middle_name" placeholder="Отчество, если желаете">
+            </li>
 
-        </ul>
-
+          </ul>
+        </div>
       </fieldset>
 
-      <fieldset class="page-form__set-contact">
+      <fieldset class="page-form__set page-form__set-contact">
+        <div class="page-form__wrapper page-center">
+          <legend class="visually-hidden">Контактная информация</legend>
 
-        <legend class="visually-hidden">Контактная информация</legend>
+          <ul class="page-form__list page-form__list-contact">
 
-        <ul class="page-form__list">
+            <li class="page-form__item page-form__item-contact">
+              <label class="page-form__contact-title" for="phone">Тел</label>
+              <input class="page-form__set-number" type="tel" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+            </li>
 
-          <li class="page-form__item-contact">
-            <label class="page-form__contact-title" for="phone">Тел</label>
-            <input class="page-form__set-number" type="tel" id="phone" placeholder="+7 XXX XXX XX XX*" required>
-          </li>
+            <li class="page-form__item page-form__item-contact">
+              <label class="page-form__contact-title" for="mail">E-mail</label>
+              <input class="page-form__set-number" type="email" id="mail" placeholder="Ваш Email*" required>
+            </li>
 
-          <li class="page-form__item-contact">
-            <label class="page-form__contact-title" for="mail">E-mail</label>
-            <input class="page-form__set-number" type="email"  id="mail" placeholder="Ваш Email*" required>
-          </li>
-
-        </ul>
-
+          </ul>
+        </div>
       </fieldset>
 
-      <div class="page-form__set-message">
+      <div class="page-form__wrapper page-center">
 
-        <label class="page-form__message-title" for="message">Доп</label>
-        <textarea class="page-form__message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="page-form__set-message">
 
+          <label class="page-form__message-title" for="message">Доп</label>
+          <textarea class="page-form__message" id="message"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+        </div>
       </div>
+      <div class="page-center page-form__wrapper">
+        <span class="page-form__note">*Поля обязательны для заполнения</span>
 
-      <span class="page-form__note">*Поля обязательны для заполнения</span>
-
-      <button class="button page-form__button" type="submit">Отправить заказ</button>
+        <button class="button page-form__button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
