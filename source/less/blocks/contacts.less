@@ -1,7 +1,12 @@
+.contacts {
+  padding-top: 42px;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 28px;
 }
 
 .contacts__button {
@@ -9,23 +14,37 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 68px;
+    padding-bottom: 45px;
+  }
+
   .contacts__button {
     margin: 10px auto;
     width: 230px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    padding: 0 50px 0 225px;
+    padding: 47px 50px 0 225px;
     margin-bottom: 105px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .contacts__title {
     grid-column-start: 1;
     grid-column-end: 2;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 80px 0 30px;
   }
 
   .contacts__button {

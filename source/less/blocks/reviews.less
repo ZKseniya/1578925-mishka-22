@@ -1,3 +1,8 @@
+.reviews__wrapper {
+  padding-top: 38px;
+  padding-bottom: 45px;
+}
+
 .reviews__title {
   margin: 0;
 }
@@ -5,11 +10,11 @@
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
-  margin: 0;
+  margin: 15px 0 33px;
 }
 
 .reviews__autor {
-  margin: 10px 0;
+  margin: 0 0 33px 0;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -19,11 +24,12 @@
 .reviews__telegram {
   display: block;
   font-weight: normal;
+  margin-top: 6px;
 }
 
 .reviews__buttons {
   display: flex;
-  margin: 10px 0;
+  margin: 0 0 35px 0;
 }
 
 .reviews__button {
@@ -42,11 +48,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 83px;
+    padding-bottom: 101px;
   }
 
   .reviews__text {
     width: 100%;
     order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 32px 0 64px;
   }
 
   .reviews__write {
@@ -55,6 +66,7 @@
 
   .reviews__autor {
     order: 3;
+    font-size: 18px;
   }
 
   .reviews__buttons {
@@ -66,5 +78,25 @@
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
     padding-left: 225px;
+    padding-top: 35px;
+    padding-bottom: 180px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__write {
+    padding: 16px 37px;
+  }
+
+  .reviews__text {
+    margin: 35px 0 45px;
+    padding-right: 62px;
+  }
+
+  .reviews__autor {
+    font-size: 17px;
   }
 }

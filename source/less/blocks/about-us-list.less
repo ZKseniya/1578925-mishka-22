@@ -8,9 +8,56 @@
   color: @font-color-dark;
 }
 
+.about-us-list__item {
+  padding-top: 50px;
+  margin-top: 33px;
+}
+
 @media (min-width: @tablet-width) {
   .about-us-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 40px;
+  }
+
+  .about-us-list__item {
+    width: 50%;
+    padding-top: 89px;
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    &:nth-of-type(1) {
+      order: 1;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 5;
+    }
+
+    &:nth-of-type(4) {
+      order: 2;
+    }
+
+    &:nth-of-type(5) {
+      order: 4;
+    }
+
+    &:nth-of-type(6) {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us-list__item {
+    padding-top: 82px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 }

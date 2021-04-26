@@ -1,7 +1,7 @@
 .promo {
   padding-top: 73px;
-  background: @bg-promo url("../img/bg-promo.jpg") no-repeat 50% 0;
-  background-size: contain;
+  background: @bg-promo url("../img/bg-promo.jpg") no-repeat 50% -15px;
+  background-size: 120%;
 }
 
 .promo__title {
@@ -12,7 +12,7 @@
   text-align: center;
   color: @font-color-dark;
   margin: 0;
-  margin-bottom: 95px;
+  margin-bottom: 121px;
 }
 
 .promo__links {
@@ -38,6 +38,8 @@
 @media (min-width: @tablet-width) {
   .promo {
     padding-top: 155px;
+    background: @bg-promo url("../img/bg-promo.jpg") no-repeat 50% 0;
+    background-size: 100%;
   }
 
   .promo__title {
@@ -53,5 +55,24 @@
 
   .promo__link {
     width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 160px 31px 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background: @bg-promo url("../img/bg-promo.jpg") no-repeat 50% -3px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 356px;
+  }
+
+  .promo__link {
+    padding: 26px 310px 31px 35px;
   }
 }
