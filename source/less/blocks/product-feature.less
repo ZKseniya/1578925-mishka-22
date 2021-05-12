@@ -2,10 +2,43 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 30px;
+  order: 3;
+  margin: 0;
+  margin-left: 27px;
+  display: flex;
+}
+
+.product-feature__title {
+  line-height: inherit;
+  font-weight: 400;
+}
+
+.product-feature__desc {
+  line-height: inherit;
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.product-feature__desc::after {
+  content: ",";
+}
+
+.product-feature__desc:last-of-type::after {
+  content: "";
+}
+
+@media (min-width: @tablet-width) {
+  .product-feature {
+    margin-left: 33px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .product-feature {
     order: 3;
+    flex-grow: 1;
+    margin-left: 29px;
   }
 }

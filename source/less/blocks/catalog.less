@@ -1,7 +1,18 @@
+.catalog__production-wrapper {
+  border: 1px solid @color-border;
+  margin: 30px 30px 56px 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__production-wrapper {
+    margin: 0 50px 65px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .catalog__production-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 1050px;
+    margin: 0 auto 102px;
   }
 }

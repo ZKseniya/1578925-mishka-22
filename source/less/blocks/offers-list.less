@@ -11,6 +11,16 @@
 .offers-list__link {
   text-decoration: none;
   color: @font-color-dark;
+
+  &:hover {
+    color: @font-color-dark;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -25,6 +35,6 @@
 
   .offers-list__link {
     display: block;
-    padding: 22px 0 43px 0;
+    padding: 19px 0 43px 0;
   }
 }

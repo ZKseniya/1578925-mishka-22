@@ -12,10 +12,26 @@
   text-decoration: none;
   border-bottom: 1px solid @bg-color-light;
   padding-bottom: 4px;
+
+  &:hover {
+    color: @bg-color-light;
+    text-decoration: inherit;
+  }
+
+  &:active {
+    border: none;
+  }
+}
+
+.contacts-info__title {
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .contacts-info__desc {
   margin: 0;
+  font-size: 14px;
+  line-height: 30px;
 
   &:nth-of-type(1) {
     margin-bottom: 30px;
@@ -31,11 +47,17 @@
   }
 
   .contacts-info__title {
-    width: 108px;
+    width: 78px;
+    font-size: 17px;
+  }
+
+  .contacts-info__desc {
+    margin: 0;
+    font-size: 17px;
   }
 
   .contacts-info__desc:nth-of-type(1) {
-    margin-right: 55px;
+    margin-right: 50px;
   }
 }
 
@@ -48,16 +70,16 @@
   }
 
   .contacts-info__title {
-    width: 82px;
+    width: 76px;
   }
 
   .contacts-info__desc {
-    width: 250px;
+    width: 220px;
   }
 
   .contacts-info__desc:nth-of-type(1) {
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   .contacts__button {

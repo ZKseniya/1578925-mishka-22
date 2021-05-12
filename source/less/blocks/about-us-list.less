@@ -9,8 +9,44 @@
 }
 
 .about-us-list__item {
-  padding-top: 50px;
-  margin-top: 33px;
+  padding-top: 83px;
+  margin-top: 0;
+
+  &:nth-of-type(1) {
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 28px;
+  }
+
+  &:nth-of-type(2) {
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 29px;
+  }
+
+  &:nth-of-type(3) {
+    background-image: url("../img/icon-5.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 34px;
+  }
+
+  &:nth-of-type(4) {
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 31px;
+  }
+
+  &:nth-of-type(5) {
+    background-image: url("../img/icon-4.svg");
+    background-repeat: no-repeat;
+    background-position: -1px 33px;
+  }
+
+  &:nth-of-type(6) {
+    background-image: url("../img/icon-6.svg");
+    background-repeat: no-repeat;
+    background-position: 2px 30px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -30,34 +66,64 @@
 
     &:nth-of-type(1) {
       order: 1;
+      background-position: 7px 33px;
     }
 
     &:nth-of-type(2) {
       order: 3;
+      background-position: 0 35px;
     }
 
     &:nth-of-type(3) {
       order: 5;
+      background-position: 7px 40px;
     }
 
     &:nth-of-type(4) {
       order: 2;
+      background-position: 2px 37px;
     }
 
     &:nth-of-type(5) {
       order: 4;
+      background-position: -1px 38px;
     }
 
     &:nth-of-type(6) {
       order: 6;
+      background-position: 2px 36px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us-list__item {
-    padding-top: 82px;
+    padding-top: 85px;
     margin-top: 0;
     margin-bottom: 30px;
+
+    &:nth-of-type(1) {
+      background-position: 9px 29px;
+    }
+
+    &:nth-of-type(2) {
+      background-position: 3px 30px;
+    }
+
+    &:nth-of-type(3) {
+      background-position: 10px 33px;
+    }
+
+    &:nth-of-type(4) {
+      background-position: 3px 32px;
+    }
+
+    &:nth-of-type(5) {
+      background-position: -1px 33px;
+    }
+
+    &:nth-of-type(6) {
+      background-position: 3px 29px;
+    }
   }
 }
