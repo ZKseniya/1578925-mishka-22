@@ -1,9 +1,45 @@
 .nav {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  padding-top: 25px;
+  border: none;
+  background: @font-color-light;
+  cursor: pointer;
+  display: none;
+}
+
+.nav--close::after {
+  content: "";
   position: absolute;
-  top: 20px;
-  right: 30px;
-  width: 40px;
-  height: 40px;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: @bg-button-menu;
+  box-shadow: 0 6px 0 0 @bg-button-menu, 0 12px 0 0 @bg-button-menu;
+}
+
+.nav--open {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: 26px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: @tablet-width) {

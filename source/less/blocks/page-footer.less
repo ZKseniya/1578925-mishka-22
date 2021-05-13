@@ -1,6 +1,7 @@
 .page-footer {
   background: @bg-color-footer;
   grid-row-start: 5;
+  padding: 27px 0;
 }
 
 .page-footer__logo {
@@ -8,6 +9,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer {
+    padding: 27px 0 55px;
+  }
+
   .page-footer .page-center {
     display: flex;
     justify-content: space-between;
@@ -18,10 +23,23 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding-top: 18px;
+
+    &:hover svg {
+      fill: @color-svg;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 27px 0 60px;
+  }
+
   .page-footer__logo {
     order: 1;
   }
