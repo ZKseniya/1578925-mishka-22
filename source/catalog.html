@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -75,6 +80,9 @@
           </a>
           <a class="catalog-list__link-img" href="">
             <picture class="catalog-list__item-picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_1_desktop.webp 1x, img/photo_1_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_1_tablet.webp 1x, img/photo_1_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo_1_mobile.webp 1x, img/photo_1_mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo_1_desktop.jpg 1x, img/photo_1_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo_1_tablet.jpg 1x, img/photo_1_tablet@2x.jpg 2x">
               <img class="catalog-list__item-img" src="img/photo_1_mobile.jpg" alt="Изображение зайчика-попрыгайчика">
@@ -104,6 +112,9 @@
           </a>
           <a class="catalog-list__link-img" href="">
             <picture class="catalog-list__item-picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_2_desktop.webp 1x, img/photo_2_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_2_tablet.webp 1x, img/photo_2_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo_2_mobile.webp 1x, img/photo_2_mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo_2_desktop.jpg 1x, img/photo_2_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo_2_tablet.jpg 1x, img/photo_2_tablet@2x.jpg 2x">
               <img class="catalog-list__item-img" src="img/photo_2_mobile.jpg"
@@ -171,6 +182,9 @@
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video">
             <picture class="production__video-picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video_desktop.webp 1x, img/video_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video_tablet.webp 1x, img/video_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video_mobile.webp 1x, img/video_mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video_desktop@1x.jpg 1x, img/video_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video_tablet@1x.jpg 1x, img/video_tablet@2x.jpg 2x">
               <img class="production__video-img" src="img/video_mobile@1x.jpg"

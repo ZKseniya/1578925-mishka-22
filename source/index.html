@@ -6,7 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -120,8 +131,11 @@
       </table>
 
       <picture class="product-week__picture">
+        <source type="image/webp" media="(min-width: 1150px)" srcset="img/foto_desktop.webp 1x, img/foto_desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/foto_tablet.webp 1x, img/foto_tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/foto_mobile.webp 1x, img/foto_mobile@2x.webp 2x">
         <source media="(min-width: 1150px)" srcset="img/foto_desktop.jpg, img/foto_desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/foto_tablet.jpg, img/foto_tablet.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/foto_tablet.jpg, img/foto_tablet@2x.jpg 2x">
         <img class="product-week__img" src="img/foto_mobile.jpg" srcset="img/foto_mobile.jpg, img/foto_mobile@2x.jpg 2x"
           width="260" height="315" alt="Вязаные корзины">
       </picture>
@@ -166,7 +180,7 @@
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
           у популярных инстамамочек.
           В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          и мои фотографии сразу стали  более стильными, а также набирают больше лайков!
         </p>
 
         <p class="reviews__autor">Анастасия Красильникова <span class="reviews__telegram">@misssssiskras</span></p>
@@ -209,7 +223,7 @@
       <div class="page-footer__wrapper page-center">
         <a class="logo page-footer__logo" aria-label="Логотип интернет-магазина Мишка">
           <svg width="102" height="34" aria-hidden="true" focusable="false">
-            <use xlink:href="img/icons/sprite.svg#icon-footer"></use>
+            <use xlink:href="img/icons/sprite.svg#icon-logo-footer"></use>
           </svg>
         </a>
         <ul class="social-list">
@@ -223,18 +237,14 @@
           <li class="social-list__item">
             <a class="social-list__link" href="" aria-label="facebook">
               <svg width="15" height="28" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons/sprite.svg#icon-fb">
-
-                </use>
+                <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="" aria-label="twitter">
               <svg width="23" height="20" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons/sprite.svg#icon-twitter">
-
-                </use>
+                <use xlink:href="img/icons/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
