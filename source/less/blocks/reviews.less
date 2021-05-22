@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.reviews::before {
+.reviews::after {
   content: "";
   display: block;
   position: absolute;
@@ -17,10 +17,10 @@
 
   @media (min-width: @tablet-width) {
     height: 17px;
-    background-size: auto 17px;
+    background-size: 768px 17px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     height: 23px;
     background-position: 50% 50%;
     background-size: 1050px 23px;
@@ -91,10 +91,9 @@
     min-height: 541px;
     background: url("../img/review-small.png") no-repeat 0 0;
 
-    background-size: auto, 100%;
-
     @media (min-resolution: 2dppx) {
       background: url("../img/review-small@2x.png") no-repeat 0 0;
+      background-size: 350px auto;
     }
   }
 
@@ -153,6 +152,7 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/review-small@2x.png") no-repeat 0 0;
+      background-size: 350px auto;
     }
   }
 

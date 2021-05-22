@@ -4,41 +4,45 @@
   height: 14px;
   padding-top: 25px;
   border: none;
-  background: @font-color-light;
+  background: rgb(@font-color-light);
   cursor: pointer;
-  display: none;
-}
+  display: inline-block;
 
-.nav--close::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: @bg-button-menu;
-  box-shadow: 0 6px 0 0 @bg-button-menu, 0 12px 0 0 @bg-button-menu;
-}
+  &--no-js {
+    display: none;
+  }
 
-.nav--open {
-  &::before,
-  &::after {
+  &--close::after {
     content: "";
     position: absolute;
-    top: 6px;
-    left: -2px;
-    width: 26px;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
     height: 2px;
-    background-color: #000000;
+    background: @bg-button-menu;
+    box-shadow: 0 6px 0 0 @bg-button-menu, 0 12px 0 0 @bg-button-menu;
   }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+  &--open {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: 26px;
+      height: 2px;
+      background-color: #000000;
+    }
 
-  &::after {
-    transform: rotate(-45deg);
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 

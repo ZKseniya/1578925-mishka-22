@@ -8,6 +8,12 @@
 
   <link rel="stylesheet" href="css/style.min.css">
 
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
@@ -80,12 +86,12 @@
           </a>
           <a class="catalog-list__link-img" href="">
             <picture class="catalog-list__item-picture">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_1_desktop.webp 1x, img/photo_1_desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_1_tablet.webp 1x, img/photo_1_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo_1_mobile.webp 1x, img/photo_1_mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/photo_1_desktop.jpg 1x, img/photo_1_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo_1_tablet.jpg 1x, img/photo_1_tablet@2x.jpg 2x">
-              <img class="catalog-list__item-img" src="img/photo_1_mobile.jpg" alt="Изображение зайчика-попрыгайчика">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_1_desktop@1x.webp 1x, img/photo_1_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_1_tablet@1x.webp 1x, img/photo_1_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo_1_mobile@1x.webp 1x, img/photo_1_mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/photo_1_desktop@1x.jpg 1x, img/photo_1_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo_1_tablet@1x.jpg 1x, img/photo_1_tablet@2x.jpg 2x">
+              <img class="catalog-list__item-img" src="img/photo_1_mobile@1x.jpg" alt="Изображение зайчика-попрыгайчика">
             </picture>
           </a>
           <dl class="product-feature">
@@ -112,13 +118,13 @@
           </a>
           <a class="catalog-list__link-img" href="">
             <picture class="catalog-list__item-picture">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_2_desktop.webp 1x, img/photo_2_desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_2_tablet.webp 1x, img/photo_2_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo_2_mobile.webp 1x, img/photo_2_mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/photo_2_desktop.jpg 1x, img/photo_2_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo_2_tablet.jpg 1x, img/photo_2_tablet@2x.jpg 2x">
-              <img class="catalog-list__item-img" src="img/photo_2_mobile.jpg"
-                srcset="img/photo_2_mobile.jpg 1x, img/photo_2_mobile@2x.jpg 2x" width="260" height="195"
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_2_desktop@1x.webp 1x, img/photo_2_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_2_tablet@1x.webp 1x, img/photo_2_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo_2_mobile@1x.webp 1x, img/photo_2_mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/photo_2_desktop@1x.jpg 1x, img/photo_2_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo_2_tablet@1x.jpg 1x, img/photo_2_tablet@2x.jpg 2x">
+              <img class="catalog-list__item-img" src="img/photo_2_mobile@1x.jpg"
+                srcset="img/photo_2_mobile@1x.jpg 1x, img/photo_2_mobile@2x.jpg 2x" width="260" height="195"
                 alt="Изображение зайчика-попрыгайчика">
             </picture>
           </a>
@@ -149,6 +155,9 @@
 
           <a class="catalog-list__link-img" href="">
             <picture class="catalog-list__item-picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo_3_desktop@1x.webp 1x, img/photo_3_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo_3_tablet@1x.webp 1x, img/photo_3_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo_3_mobile@1x.webp 1x, img/photo_3_mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo_3_desktop@1x.jpg 1x, img/photo_3_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo_3_tablet@1x.jpg 1x, img/photo_3_tablet@2x.jpg 2x">
               <img class="catalog-list__item-img" src="img/photo_3_mobile@1x.jpg"
@@ -182,9 +191,9 @@
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video">
             <picture class="production__video-picture">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video_desktop.webp 1x, img/video_desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/video_tablet.webp 1x, img/video_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video_mobile.webp 1x, img/video_mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video_desktop@1x.webp 1x, img/video_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video_tablet@1x.webp 1x, img/video_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video_mobile@1x.webp 1x, img/video_mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video_desktop@1x.jpg 1x, img/video_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video_tablet@1x.jpg 1x, img/video_tablet@2x.jpg 2x">
               <img class="production__video-img" src="img/video_mobile@1x.jpg"
@@ -202,16 +211,16 @@
           </p>
         </div>
 
-        <a class="button production__button" href="form.html">Сделать заказ</a>
+        <a class="button catalog__button" href="">Сделать заказ</a>
       </div>
     </section>
 
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper page-center">
-      <a class="logo page-footer__logo" href="index.html">
-        <svg width="102" height="34" aria-label="Логотип интернет-магазина Мишка">
-          <use xlink:href="img/icons/sprite.svg#icon-footer"></use>
+      <a class="logo page-footer__logo" aria-label="Логотип интернет-магазина Мишка" href="index.html">
+        <svg width="102" height="34" aria-hidden="true" focusable="false">
+          <use xlink:href="img/icons/sprite.svg#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="social-list">
@@ -225,18 +234,14 @@
         <li class="social-list__item">
           <a class="social-list__link" href="" aria-label="facebook">
             <svg width="15" height="28" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite.svg#icon-fb">
-
-              </use>
+              <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="" aria-label="twitter">
             <svg width="23" height="20" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons/sprite.svg#icon-twitter">
-
-              </use>
+              <use xlink:href="img/icons/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -244,16 +249,17 @@
 
       <div class="developer">
         <p class="developer__text">Разработано</p>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru">
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
           <svg width="27" height="35" class="developer__icon" aria-hidden="true" focusable="false">
-            <use xlink:href="img/icons/sprite.svg#icon-academy"></use>
+            <use xlink:href="img/icons/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+
   <section class="modal">
-    <div class="modal-wrapper">
+    <div class="modal__wrapper">
       <h1 class="modal__title">Добавить в корзину</h1>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form">

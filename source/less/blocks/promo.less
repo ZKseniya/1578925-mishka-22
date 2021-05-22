@@ -1,11 +1,11 @@
 .promo {
   padding-top: 73px;
   background: @bg-promo url("../img/header-small.jpg") no-repeat 50% -15px;
-  background-size: 100%;
+  background-size: 318px auto;
 
   @media (min-resolution: 2dppx) {
     background: @bg-promo url("../img/header-small@2x.jpg") no-repeat 50% -15px;
-    background-size: 100%;
+    background-size: 318px auto;
   }
 }
 
@@ -98,7 +98,7 @@
   .promo {
     padding-top: 65px;
     background: @bg-promo url("../img/header-big.jpg") no-repeat;
-    background-size: cover;
+    background-size: 1150px auto;
     background-position: 50% -90px;
     position: relative;
 
@@ -148,18 +148,17 @@
 @media (min-width: @desktop-width) {
   .promo {
     padding-top: 70px;
-    background-position: 50% -91px;
-    background-size: 91%;
+    background-position: 50% -89px;
 
     &::after {
-      bottom: -18px;
+      bottom: -16px;
       height: 34px;
       max-height: 34px;
       padding-top: 0;
       background-image: url("../img/zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 37px;
-      background-position-x: 0;
+      background-position-x: 50%;
     }
   }
 
